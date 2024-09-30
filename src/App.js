@@ -19,12 +19,13 @@ function App() {
   //   [userName]
   // );
   return (
-//     <UserContext.Provider value={value}>
-//       <Myhome />
-//       <Service />
-// <Name namekey={names} />
-//     </UserContext.Provider>
-<div>
+    <div>
+    <UserContext.Provider value={value}>
+      <Myhome />
+      <Service />
+<Name namekey={names} />
+    </UserContext.Provider>
+
 <BrowserRouter>
 <Link to="/">Home</Link>
 <Link to="/service">Service</Link>
